@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+
+        a {
+            text-decoration:none;
+        }
+        .wrapper {
+            display: grid;
+            grid-template-columns:
+              1fr
+              min(65ch, 100%)
+              1fr;
+          }
+          .wrapper > * {
+            grid-column: 2;
+          }
+    
+          
+          
+           
+    
+    
+       </style>
+       <nav class="navbar navbar-light bg-dark">
+        <div class="container-fluid">
+            <a href="index.html" class="col-10">Latitude</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+
+         
+        </div>
+      </nav>
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <ul class='text-end'>
+                <div class="dropdown">
+                    <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Plots</a>
+                  
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="maxtemp.html">Max Temperature</a></li>
+                      <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+                      <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
+                      <li><a class="dropdown-item" href="windspeed.html">Wind Speed</a></li>
+                    </ul>
+                  </div>
+                <li><a href="comparison.html" class="col">Comparison</a></li>
+                <li><a href="data.html" class="col">Data</a></li>
+            </ul>
+            
+            
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+
+
+
+
+
+      <h1 class='text-center'></h1>
+     
+      <div class='row'>
+      <div class='col-sm-6'>
+      <h3 class='text-center'>vs. Max Temperature</h3>
+      <img src="Resources/assets/images/Fig1.png" alt="" class='col-4 col-md-6 mx-auto d-block img-thumbnail'>
+    </div>
+    
+      <br>
+      <br>
+      <br>
+    
+      <div class='col-sm-6'>
+      <h3 class='text-center'>vs. Humidity</h3>
+      <img src="Resources/assets/images/Fig2.png" alt="" class='col-4 col-md-6 mx-auto d-block img-thumbnail'>
+    </div>
+    
+    </div>
+      <br>
+      <br>
+      <br>
+       
+      <div class='row'>
+      <div class='col-sm-6'>
+      <h3 class='text-center'>vs. Cloudiness</h3>
+      <img src="Resources/assets/images/Fig3.png" alt="" class='col-4 col-md-6 mx-auto d-block img-thumbnail'>
+    </div>
+       
+      
+
+      <br>
+      <br>
+      <br>
+      
+      
+      <div class='col-sm-6'>
+      <h3 class='text-center'>vs. Wind Speed</h3>
+      <img src="Resources/assets/images/Fig4.png" alt="" class='col-4 col-md-6 mx-auto d-block img-thumbnail'>
+      </div>
+    </div>
+
+
+  
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -4,10 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     
+</head>
+   <style>
+
+    a {
+        text-decoration:none;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns:
+          1fr
+          min(65ch, 100%)
+          1fr;
+      }
+      .wrapper > * {
+        grid-column: 2;
+      }
+ 
+
+      
+       
+
+
+   </style>
+        
+    
+<body>
+
+    
+    <nav class="navbar navbar-light bg-dark">
+        <div class="container-fluid">
+            <a href="index.html" class="col-10">Latitude</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+
+         
+        </div>
+      </nav>
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <ul class='text-end'>
+                <div class="dropdown">
+                    <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Plots</a>
+                  
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="maxtemp.html">Max Temperature</a></li>
+                      <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+                      <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
+                      <li><a class="dropdown-item" href="windspeed.html">Wind Speed</a></li>
+                    </ul>
+                  </div>
+                <li><a href="comparison.html" class="col">Comparison</a></li>
+                <li><a href="data.html" class="col">Data</a></li>
+            </ul>
+            
+            
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+    <h1 class='text-center'>Summary: Latitude vs X</h1>
+    <div class='fluid-container'>
+         
+        
+        <section class='wrapper'>
+            <img class='wrapper' src="Resources/assets/images/Fig1.png" alt="blah" class='col-3 img-thumbnail'>
+            <p class='text-wrap'>The purpose of this project was to analyze how weather changes as you get 
+                closer to the equator.
+            To accomplish this analysis, we first pulled data from the OpenWeather API 
+            to assemble a dataset on over 500 cities.   
+            </p>
+            <p class='text-wrap'>After assembling the dataset, we used Matplotlib to plot various aspects of the 
+                weather vs latitude.
+            Factors we looked at included: temperature, cloudiness, wind speed, and humidity. 
+            This provides the
+            the source data and visualizations created as part of the analysis, as well 
+            as explanations and descriptions of any trends and correlations witnessed 
+            </p>
+        </section>
+        
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h2 class="text-center">Visualizations</h2>
+
+    <br><br>
+    <div class='row'>
+        <div class='col'>
+        <a href='maxtemp.html'><img class='img-fluid' src="Resources/assets/images/Fig1.png" alt=""></a>
+        </div>
+        <div class='col'>
+        <a href="humidity.html"><img class='img-fluid' src="Resources/assets/images/Fig2.png" alt=""></a>
+        </div>
+        <div class='col'>
+        <a href="cloudiness.html"><img class='img-fluid' src="Resources/assets/images/Fig3.png" alt=""></a>
+        </div>
+        <div class='col'>
+        <a href="windspeed.html"><img class='img-fluid' src="Resources/assets/images/Fig4.png" alt=""></a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
+
 </html>
